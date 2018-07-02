@@ -1,0 +1,33 @@
+page-fingerauth {
+    .toggle-md .toggle-icon{
+
+        -ms-transform: rotate(18deg); /* IE 9 */
+        -webkit-transform: rotate(180deg); /* Safari 3-8 */
+        transform: rotate(180deg);
+    }
+    .toggle-ios .toggle-icon{
+    
+        -ms-transform: rotate(18deg); /* IE 9 */
+        -webkit-transform: rotate(180deg); /* Safari 3-8 */
+        transform: rotate(180deg);
+    }
+    .toggle-wp .toggle-icon{
+    
+        -ms-transform: rotate(18deg); /* IE 9 */
+        -webkit-transform: rotate(180deg); /* Safari 3-8 */
+        transform: rotate(180deg);
+    }
+    
+    .toggle-ios .toggle-inner {
+        box-shadow: 0 -3px 10px -3px #000
+    }
+    .toggle-md .toggle-inner {
+        box-shadow: 0 -1px 10px -1px grey
+    }
+    
+    .toggle-md-custom-blue.toggle-checked .toggle-inner{
+    
+        box-shadow: none;  
+    }
+    
+}

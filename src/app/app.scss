@@ -1,0 +1,565 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+@font-face {
+	font-family: roboto-condensed-light;
+	src: url("../assets/fonts/roboto-condensed.light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+   }
+   @font-face {
+	   font-family: roboto-condensed-bold;
+	   src: url("../assets/fonts/roboto-condensed.bold.ttf") format("truetype");
+	   font-style: normal;
+	   font-weight: normal;
+   }
+
+   ion-app.ios, ion-app.wp, ion-app.md, {
+	font-family: roboto-condensed-light;
+   }
+
+   /*Header-css*/
+
+   .header-md::after, .header-ios::after, .header-wp::after
+   { background-image: none !important;}
+
+   .header-ios .toolbar-background-ios
+   {
+	border-style: none;
+
+   }
+
+   .toolbar-background-md {
+    border-color:none;
+	background: none;
+	}
+	
+	.toolbar-background-ios {
+		border-color:none;
+		background: none;
+		}
+
+	.toolbar-background-wp {
+		border-color:none;
+		background: none;
+		}
+
+	ion-navbar.toolbar .logo {
+		max-height: 36px;
+		margin: 0 auto;
+		display: block;
+		}
+
+   /*content-css*/
+
+   ion-content {
+	   background: url("../assets/imgs/bg.jpg") no-repeat fixed top;
+	   -webkit-background-size: cover;
+	   -moz-background-size: cover;
+	   background-size: cover;
+   }
+   .content-md, .content-wp, .content-ios {
+	   color: #FFF;
+   }
+     
+/*Footer-css*/
+   .footer-btn {
+	   color: #FFF;
+	   text-transform: uppercase;
+	   font-size: 20px;
+	   letter-spacing: 1px;
+   }
+   .footer-btn.bold {
+	   font-family: roboto-condensed-bold;
+	   font-weight: bold;
+   }
+
+   /*Helper-css*/
+   
+   /*padding-css*/
+   
+   .p-lr-0 {
+	   padding-left: 0px !important;
+	   padding-right: 0px !important;
+   }
+   .p-0 {
+	   padding: 0px !important;
+   }
+   .p-lo-3 {
+	   padding: 0px 0px 0px 3px !important;
+   }
+   .p-r-0 {
+	   padding-right: 0px !important;
+   }
+   .p-l-0 {
+	   padding-left: 0px !important;
+   }
+   .p-l-3 {
+	   padding-left: 3px !important;
+   }
+   /*margin-css*/
+   .m-b-0 {
+	   margin-bottom: 0px !important;
+   }
+   .m-t-5{ 
+	   margin-top: 5px !important;
+	}
+   .m-t-10 {
+	   margin-top: 10px !important;
+   }
+   .m-t-40 {
+	margin-top: 40px !important;
+	}
+	.m-b-15 {
+		margin-bottom: 15px !important;
+	}
+   .m-b-20 {
+	   margin-bottom: 20px !important;
+   }
+   .m-b-30 {
+	margin-bottom: 30px !important;
+   }
+   .m-b-40 {
+	margin-bottom: 40px !important;
+   }
+   .m-b-50 {
+	margin-bottom: 50px !important;
+   }
+   .m-b-60 {
+	margin-bottom: 60px !important;
+   }
+
+
+.m-l-20 {
+	margin-left: 20px !important;
+}
+   .text-c {text-align: center;}
+   .text-r{ text-align: right;}
+   .text-l{ text-align: left;}
+
+   .fl-l {
+	   float: left;
+   }
+   .fl-r {
+	   float: right;
+   }
+   .txt-gray {
+	   color: #777;
+   }
+
+   .txt-w{ color: #FFF !important;}
+
+   .img-rsp {
+	   max-width: 100%;
+	   height: auto;
+   }
+
+   .btn-xs{ height: 1.8em; font-size: 1.2rem;  padding: 0px 0.5em;}
+
+      /*End-Helper-Css*/
+   
+   /*input-Css*/
+	
+   .text-input-md, .text-input-ios, .text-input-wp {
+	   background-color: #627c85;
+	   border-radius: 5px;
+	   padding: 8px;
+	   border-style: none;
+	   color: #FFF;
+   }
+
+   .item-md.item-block .item-inner, .item-ios.item-block .item-inner {
+	   border-bottom: none !important;
+   }
+   .list-md .item-input:last-child, .list-ios .item-input:last-child {
+	   border-bottom: none !important;
+   }
+   .item-md.item-input.item-input-has-focus .item-inner, .item-md.item-input.input-has-focus .item-inner {
+	   border-bottom-color: transparent !important;
+	   -webkit-box-shadow: none !important;
+	   box-shadow: none !important;
+   }
+   .list-md .item-input.item-input-has-focus:last-child, .list-md .item-input.input-has-focus:last-child {
+	   border-bottom-color: transparent !important;
+	   -webkit-box-shadow: none !important;
+	   box-shadow: none !important;
+   }
+   .item-input-has-focus .label-md[stacked], .input-has-focus .label-md[stacked], .item-input-has-focus .label-md[floating], .input-has-focus .label-md[floating] {
+	   color: #FFFFFF;
+   }
+   .item-md, .item-ios, .item-wp {
+	   background-color: transparent;
+   }
+   .list-md > .item-block ion-label, .list-ios > .item-block ion-label, .list-wp > .item-block ion-label {
+	   color: #FFF;
+	   font-size: 14px;
+   }
+   .alert-md .alert-input:focus, .alert-ios .alert-input:focus, .alert-wp .alert-input:focus {
+	   border-bottom: none !important;
+   }
+   /*End-input-Css*/
+	
+	
+	/*btn-Css*/
+
+	.bar-button-default-md{ color: #FFF;}
+	.bar-button-default-ios{ color: #FFF;}
+	.bar-button-default-wp{ color: #FFF;}
+
+   .fb-btn {
+	   background-color: #3b5998;
+	   font-weight: bold;
+	   border-radius: 3px;
+	   text-transform: inherit !important;
+   }
+   .gp-btn {
+	   background-color: #dd4b39;
+	   border-radius: 3px;
+	   text-transform: inherit !important;
+   }
+   .rg-frm-mrg {
+	   margin-left: -5px;
+	   margin-right: -6px;
+   }
+   .bg-blue {
+	   background-color: #307fc2;
+   }
+   .hero-text {
+	   text-align: center;
+	   position: absolute;
+	   top: 50%;
+	   left: 50%;
+	   transform: translate(-50%, -50%);
+	   color: white;
+	   width: 100% !important;
+   }
+   .otp-btns {
+	   padding: 15px 0px;
+	   max-width: 304px;
+	   margin: 0 auto;
+   }
+   .otp-btns .txt-fld {
+	   height: 43px;
+	   width: auto;
+	   border: none !important;
+	   padding: 0px;
+	   background-color: transparent !important;
+	   color: #FFF !important;
+	   background: url("../assets/imgs/bg-circle.png") no-repeat center;
+   }
+	$char-w: 1ch;
+	$gap: 1.80*$char-w;
+	$n-char: 6;
+	$in-w: $n-char*($char-w + $gap);
+   .otp-btns .text-input-md, .otp-btns .text-input-ios, .otp-btns .text-input-wp {
+	   margin: 0 auto;
+	   display: block;
+	   padding: 0;
+	width: $in-w;
+	   font: 3.66ch droid sans mono, consolas, monospace;
+	letter-spacing: $gap;
+	   margin-left: 33px;
+	   border-style: none;
+   }
+   .otp-btns .text-input-ios {
+	   font: 3.44ch droid sans mono, consolas, monospace;
+   }
+   .otp-btns .text-input-wp {
+	   margin-top: 2px;
+   }
+	/*registration-sec*/ 
+
+	.reg-hdg{
+		margin-top: 40px !important;
+		margin-bottom: 25px;
+		text-align: center;	
+		text-transform: uppercase;
+	}
+	.reg-s-hdg{
+		margin-top: 60px !important;
+		margin-bottom: 10px;
+		text-align: center;	
+		text-transform: uppercase;
+	}
+
+	.rg-icon {
+		color: #FFF;
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	.em-img{ 
+		max-width:100%;
+		height: auto;
+		margin-top: 15px;
+		max-height: 28px;
+        float: right;
+	}
+
+	
+
+	.content-wp .em-img{ margin-top: 24px;}
+
+	.list-ios > .item-block:first-child {
+		border-top: none;
+	}
+	
+   /*authent-sec*/ 
+   
+   .authent-hdg {
+	   margin-top: 50px !important;
+	   margin-bottom: 25px;
+	   text-align: center;
+   }
+   .authent-btn-div {
+	   margin: 5px 0px;
+   }
+   .auth-btn {
+	   background-color: #68838d;
+	   color: #FFF;
+	   text-transform: inherit;
+	   margin-top: 0px;
+	   margin-bottom: 0px;
+	   font-size: 20px;
+   }
+
+   .content-ios .auth-btn{ max-height: 38px;}
+
+   .auth-icon-btn {
+	   background-color: #68838d;
+	   color: #FFF;
+	   margin-top: 0px;
+	   margin-bottom: 0px;
+   }
+
+   .content-ios .auth-icon-btn{ max-height: 38px;}
+
+   /*fingerprint-Css*/
+   
+   .figer-icn, .figer-pop-icn {
+	   text-align: center;
+	   font-size: 48px;
+	   margin-top: 80px !important;
+	   margin-bottom: 25px;
+   }
+   .fp-hdng {
+	   text-align: center;
+	   text-transform: uppercase;
+   }
+   .figer-togldiv {
+	   width: 180px;
+	   margin: 0 auto;
+	   margin-top: 30px;
+	   height: auto;
+	   padding: 2px 10px;
+	   background-color: #FFF;
+	   border-radius: 23px;
+	   overflow: hidden;
+   }
+   .toggle-md-custom-blue.toggle-checked .toggle-inner,  .toggle-ios-custom-blue.toggle-checked .toggle-inner {
+	   background-color: #6e6e6e;
+   }
+   .toggle-ios-custom-blue.toggle-checked .toggle-icon {
+    background-color: #25aae1;
+  }
+  .toggle-md-custom-blue.toggle-checked .toggle-icon {
+    background-color: #25aae1;
+  }
+  .toggle-wp-custom-blue.toggle-checked .toggle-icon {
+	background-color: #25aae1;
+	border-color: #25aae1
+  }
+
+   .figer-togldiv .lft-dv {
+	   float: left;
+	   width: 20%;
+	   text-align: center;
+	   line-height: 44px;
+   }
+   .figer-togldiv .rit-dv {
+	   float: right;
+	   width: 20%;
+	   text-align: center;
+	   line-height: 44px;
+   }
+   .figer-togldiv .mdl-dv {
+	   float: left;
+	   width: 60%;
+   }
+   .figer-togldiv .item-md.item-block .item-inner {
+	   margin-right: 20px;
+   }
+   .figer-togldiv .item-wp.item-block .item-inner {
+	   margin-right: 10px;
+   }
+   .figer-togldiv .item-ios .toggle-ios {
+	   padding: 6px 13px 5px 0px;
+   }
+   /*Voice--Css*/
+   
+   .vc-hdng {
+	   text-align: center;
+	   text-transform: uppercase;
+	   margin-top: 100px !important;
+	   margin-bottom: 25px;
+   }
+   .voice-icn {
+	   text-align: center;
+	   font-size: 48px;
+	   margin-top: 40px !important;
+	   margin-bottom: 30px;
+   }
+
+   /*Face--Css*/
+   
+   .face-icn-top {
+	   margin: 5px;
+	   font-size: 30px;
+   }
+   .face-btn-ico {
+	   position: absolute;
+	   bottom: 30px;
+	   width: 90%;
+	   text-align: center;
+   }
+   .face-btn-ico button {
+	   color: #FFF;
+	   margin: 0 auto;
+	   height: auto;
+	   padding: 5px !important;
+	   width: 60px !important;
+	   height: 60px;
+	   border-radius: 50%;
+   }
+   .face-btn-ico .ico-crcl {
+	   font-size: 56px;
+   }
+
+   .acc-list{ 
+	   border-top:2px solid #6591a1;
+	   border-bottom:2px solid #6591a1;
+	   background-color: #5a7a86;
+	}
+   .acc-list:first-child{border-bottom:none;}
+
+   .btn-bg-list{ background-color: #385c67;}
+   
+   .acc-addbtns{ color: #307fc2;
+				 font-size: 15px;
+				 font-weight: bold;
+				 text-align: left;
+				 height: auto;
+	} 
+
+
+
+	// Customer-Name-Css
+
+.cus-n-dv{
+	background-image: -o-linear-gradient(bottom, #536870 0%, #4C6066 100%);
+	background-image: -moz-linear-gradient(bottom, #536870 0%, #4C6066 100%);
+	background-image: -webkit-linear-gradient(bottom, #536870 0%, #4C6066 100%);
+	background-image: -ms-linear-gradient(bottom, #536870 0%, #4C6066 100%);
+	background-image: linear-gradient(to bottom, #536870 0%, #4C6066 100%);
+	padding: 20px 5px;
+	font-size: 16px;
+	color: #FFF;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 94%;
+	border-radius: 10px;
+	
+ }
+
+ // finger-pop-Css
+
+ .fgr-pop-hdng {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 80px;
+	margin-bottom: 0px !important;
+}
+
+.fgr-pop-dv, .voic-pop-dv{
+	background-image: -o-linear-gradient(bottom, #536870 0%, #4C6066 100%);
+	background-image: -moz-linear-gradient(bottom, #536870 0%, #4C6066 100%);
+	background-image: -webkit-linear-gradient(bottom, #536870 0%, #4C6066 100%);
+	background-image: -ms-linear-gradient(bottom, #536870 0%, #4C6066 100%);
+	background-image: linear-gradient(to bottom, #536870 0%, #4C6066 100%);
+	padding: 15px 0px 25px 0px;
+	font-size: 18px;
+	color: #FFF;
+	text-align: center;
+	max-width: 100%;
+	border-radius: 10px;
+	margin: 40px 10px 0px 10px;
+	text-transform: uppercase;
+	
+ }
+
+.figer-pop-icn {
+	margin-top: 0px !important;
+	margin-bottom: 30px;
+}
+
+.voic-pop-dv{
+	padding:50px 0px;
+	margin: 40px 10px 20px 10px;
+
+}
+.voic-pop-dv p{
+ font-size: 14px !important;
+ text-transform: initial !important;
+ max-width: 80%;
+ margin: 0 auto;
+ display: block;
+}
+				
+.voice-pop-icn {
+	   text-align: center;
+	   font-size: 48px;
+	   margin-top: 20px;
+	   
+   }	
+
+.ys-no-dv{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 96%;
+	}
+
+.ysno-pghdng{
+
+	position: absolute;
+	top: 22%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width:98%;
+	}
+
+	.ysno-pghdng h3{ margin-bottom: 20px;}
+
+.ysno-btn {
+	font-weight: bold;
+	border-radius: 4px;
+	}

@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        <img class="logo" alt="logo" src="assets/imgs/woosh-logo.png">
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+  
+    <div class="figer-icn">
+        <ion-icon name="finger-print"></ion-icon>
+      </div>
+         
+      <h5 class="fp-hdng"> FINGERPRINT<br>
+          AUTHENTICATION METHOD</h5>
+    
+      <p class="text-c m-b-60">Please toggle on or off</p>
+  
+      <div class="figer-togldiv">
+         
+                <div class="lft-dv txt-gray">ON</div>
+                <div class="mdl-dv">
+                <ion-item>
+                    <ion-toggle  checked="true" color="custom-blue" [(ngModel)]="value"></ion-toggle>
+                </ion-item>
+                </div>
+                <div class="rit-dv txt-gray">OFF</div>            
+      
+        </div>
+    
+          
+    </ion-content>
+  
+  
+  <ion-footer>
+    <ion-toolbar color="custom-blue">
+      <ion-title><button ion-button block clear class="footer-btn bold" (click)="openvoicepopPage()">Done</button></ion-title>
+    </ion-toolbar>
+  </ion-footer>
+  

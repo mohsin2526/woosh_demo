@@ -1,0 +1,77 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        <img class="logo" alt="logo" src="assets/imgs/woosh-logo.png">
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+         
+    <h5 class="authent-hdg" *ngIf="!loggedIn">Please authentication yourself</h5>
+    <h5 class="authent-hdg" *ngIf="loggedIn">{{ authmsg }}</h5>
+    <!-- <p class="text-c">Please setup at least one method</p> -->
+  
+        <ion-grid *ngIf="!loggedIn">
+          <ion-row>
+            <ion-col col-8 offset-2>
+  
+          <ion-col col-12>
+              <ion-row (click)="finer_auth()" class="m-b-15">
+                  <ion-col col-3 class="p-0">
+                      <button ion-button large block icon-only class="auth-icon-btn">
+                          <ion-icon name="finger-print"></ion-icon>
+                        </button>
+                  </ion-col>
+                  <ion-col col-9 class="p-lo-3">
+                        <button ion-button large block class="auth-btn">
+                            Fingerprint                
+                         </button>
+                  </ion-col>
+              </ion-row>
+            </ion-col>
+  
+            <!-- <ion-col col-12>
+                <ion-row  (click)="face_auth()" class="m-b-15">
+                    <ion-col col-3 class="p-0">
+                        <button ion-button block icon-only class="auth-icon-btn">
+                            <ion-icon name="contact"></ion-icon>
+                          </button>
+                    </ion-col>
+                    <ion-col col-9 class="p-lo-3">
+                          <button ion-button block class="auth-btn">
+                              Face                
+                           </button>
+                    </ion-col>
+                </ion-row>
+              </ion-col>
+  
+              <ion-col col-12>
+                  <ion-row (click)="voice_auth()">
+                      <ion-col col-3 class="p-0">
+                          <button ion-button block icon-only class="auth-icon-btn">
+                              <ion-icon name="mic"></ion-icon>
+                            </button>
+                      </ion-col>
+                      <ion-col col-9 class="p-lo-3">
+                            <button ion-button block class="auth-btn">
+                                Voice                
+                             </button>
+                      </ion-col>
+                  </ion-row>
+                </ion-col> -->
+                
+           </ion-col>
+         </ion-row>
+      </ion-grid>
+    
+  </ion-content>
+  
+  
+  <ion-footer>
+    <ion-toolbar color="custom-blue">
+      <ion-title><button ion-button block clear class="footer-btn bold"></button></ion-title>
+    </ion-toolbar>
+  </ion-footer>
+  
+  
